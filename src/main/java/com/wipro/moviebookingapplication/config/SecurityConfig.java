@@ -118,7 +118,7 @@ public class SecurityConfig {
                                 .requestMatchers("/api/auth/**").permitAll()
                                 .requestMatchers("/admin/**").hasRole("ADMIN") // Restrict access to /admin/** to ADMIN role
                                 .requestMatchers("/user/**").hasRole("USER")// Restrict access to /user/** to USER role
-                                .anyRequest().permitAll()  // All other requests require authentication
+                                .anyRequest().permitAll()// All other requests require authentication
                 )
                 .formLogin(formLogin ->
                         formLogin

@@ -9,14 +9,14 @@ import com.wipro.moviebookingapplication.entity.Booking;
 @Service
 public interface BookingServices {
 
-	List<Booking> getAllBookings();
+    List<Booking> getAllBookings();
 
-	Booking getBookingById(int id);
+    Booking getBookingById(int id);
 
-	Booking saveBooking(Booking booking);
+    Booking saveBooking(Booking booking);
 
-	Booking updateBooking(int id, Booking bookingDetails);
+    Booking updateBooking(int id, Booking bookingDetails);
 
-	void deleteBooking(int id);
+    void deleteBooking(int id);
 
 }

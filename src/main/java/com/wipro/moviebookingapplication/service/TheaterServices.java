@@ -11,14 +11,14 @@ import com.wipro.moviebookingapplication.entity.Theater;
 @Service
 public interface TheaterServices {
 
-	void deleteTheater(Integer id);
+    void deleteTheater(Integer id);
 
-	Theater updateTheater(Integer id, Theater theaterDetails);
+    Theater updateTheater(Integer id, Theater theaterDetails);
 
-	Theater saveTheater(Theater theater);
+    Theater saveTheater(Theater theater);
 
-	Theater getTheaterById(Integer id);
+    Theater getTheaterById(Integer id);
 
-	List<Theater> getAllTheaters();
+    List<Theater> getAllTheaters();
 
 }

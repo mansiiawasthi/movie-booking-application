@@ -85,6 +85,23 @@ public class UserServiceImpl implements UserService {
 
         return userRepository.save(existingUser);
     }
+//    @Override
+//    public User updateUser(Long id, UserDTO userDTO) {
+//        User existingUser = userRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found"));
+//
+//        // Update fields conditionally
+//        if (userDTO.getUsername() != null) {
+//            existingUser.setUsername(userDTO.getUsername());
+//        }
+//        if (userDTO.getEmail() != null) {
+//            existingUser.setEmail(userDTO.getEmail());
+//        }
+//        if (userDTO.getPassword() != null) {
+//            existingUser.setPassword(userDTO.getPassword()); // Ensure you hash the password before saving
+//        }
+//
+//        return userRepository.save(existingUser);
+//    }
 
     @Override
     public void deleteUser(Long id) {

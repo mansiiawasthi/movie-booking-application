@@ -8,4 +8,5 @@ import com.wipro.moviebookingapplication.entity.Booking;
 @Repository
 public interface BookingRepository extends JpaRepository<Booking, Integer> {
 
+
 }

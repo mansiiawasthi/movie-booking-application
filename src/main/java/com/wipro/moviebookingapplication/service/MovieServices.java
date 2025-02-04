@@ -10,14 +10,14 @@ import com.wipro.moviebookingapplication.entity.Movie;
 @Service
 public interface MovieServices {
 
-	List<Movie> getAllMovies();
+    List<Movie> getAllMovies();
 
-	Movie getMovieById(Integer id);
+    Movie getMovieById(Integer id);
 
-	Movie saveMovie(Movie movie);
+    Movie saveMovie(Movie movie);
 
-	void deleteMovie(Integer id);
+    void deleteMovie(Integer id);
 
-	Movie updateMovie(int id, Movie movie);
+    Movie updateMovie(int id, Movie movie);
 
 }
